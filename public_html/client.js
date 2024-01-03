@@ -1,4 +1,4 @@
-var socket = io.connect("http://localhost:7050")
+var socket = io.connect("https://realtim-chatting-site.onrender.com")
 var userName = document.getElementById("username");
 var message = document.getElementById("message");
 var send = document.getElementById("send");
