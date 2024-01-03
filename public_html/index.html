@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+    <link rel="stylesheet" type="text/css" href="./bootstrap.css">
+</head>
+<body class=" bg-dark">
+    <div class="container text-warning">
+        <h2 class="text-center">Chat Messages</h2><br>
+        <div id="broadcat" class="my-2"></div>
+        <div id="chat-messages" class="d-flex flex-column mb-3 align-items-start overflow-auto">
+           
+        </div>
+        <hr>
+        <div class="chat text-center">
+           <div class="row mx-5 ">
+            <label class="col-4 fs-4" for="username" >User Name</label>
+            <input class="col-8  rounded my-2" type="text" name="username" id="username" placeholder="User Name">
+            <textarea id="message" class="col-12 rounded  my-2 "  rows="2" placeholder="Message"></textarea>
+            <div class="col-12">
+                <button id="send" class="rounded bg-primary text-capitalize fs-5">send Message</button>
+            </div>
+           </div>
+        </div>
+    </div>
+</body>
+<script src="./client.js"></script>
+</html>
